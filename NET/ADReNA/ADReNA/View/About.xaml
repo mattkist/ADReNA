@@ -1,0 +1,80 @@
+﻿<Window x:Class="ADReNA.View.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
+        Icon="/ADReNA;component/Images/transparent.ico"
+        Title="Sobre ADReNA" Height="360" Width="535" ResizeMode="NoResize">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="/ADReNA;component/Images/mainico.png" Margin="388,0,10,-3" Grid.Row="5" Grid.RowSpan="5"  />
+
+        <Label Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Label.Content>
+                <AccessText TextWrapping="Wrap" Text="ADReNA" FontSize="24" FontWeight="Bold"/>
+            </Label.Content>
+        </Label>
+        
+        <Label Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Label.Content>
+                <AccessText TextWrapping="Wrap" Text="Ambiente de Desenvolvimento de Redes Neurais Artificiais" FontSize="18" FontWeight="Bold"/>
+            </Label.Content>
+        </Label>
+
+        <Label Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,20,0,0">
+            <Label.Content>
+                <AccessText TextWrapping="Wrap" Text="Matheus Henrique Kist - matthkist@gmail.com" FontWeight="Bold"/>
+            </Label.Content>
+        </Label>
+
+        <Label Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,0,0">
+            <Label.Content>
+                <AccessText TextWrapping="Wrap" Text="Rejane Frozza - frozza@unisc.br" FontWeight="Bold" />
+            </Label.Content>
+        </Label>
+
+        <Label Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,20,0,0">
+            <Label.Content>
+                <AccessText TextWrapping="Wrap" Text="Curso de Graduação em Ciência da Computação" FontWeight="Bold"/>
+            </Label.Content>
+        </Label>
+        <Label Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,0,0">
+            <Label.Content>
+                <AccessText TextWrapping="Wrap" Text="UNISC - Universidade de Santa Cruz do Sul" />
+            </Label.Content>
+        </Label>
+        <Label Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,0,0">
+            <Label.Content>
+                <AccessText TextWrapping="Wrap" Text="Av. Independência, 2293. Bairro: Universitário. CEP: 96815-900" />
+            </Label.Content>
+        </Label>
+        <Label Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,0,0">
+            <Label.Content>
+                <AccessText TextWrapping="Wrap" Text="Santa Cruz do Sul - RS / Brasil" />
+            </Label.Content>
+        </Label>
+        <Label Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,0,0">
+            <Label.Content>
+                <AccessText TextWrapping="Wrap" Text="Fone: (51) 3717-7300" />
+            </Label.Content>
+        </Label>
+
+        <Label Grid.Row="9" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Label.Content>
+                <AccessText TextWrapping="Wrap" Text="Versão: 1.1" />
+            </Label.Content>
+        </Label>
+    </Grid>
+</Window>

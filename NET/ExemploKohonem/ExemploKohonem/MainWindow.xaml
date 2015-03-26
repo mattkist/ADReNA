@@ -1,0 +1,51 @@
+﻿<Window x:Class="ExemploKohonen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Icon="transparent.ico"
+        Title="Exemplo Kohonen" Height="400" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+            
+            <Border Grid.Column="0" Height="310" Width="310" 
+                    Margin="15,10,0,0"
+                    BorderThickness="5"
+                    BorderBrush="Black"
+                    CornerRadius="10"
+                    Background="WhiteSmoke"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top">
+                <Canvas  Name="inputSurface" MouseDown="inputSurface_MouseDown">
+                    <Canvas.Background>
+                        <SolidColorBrush Color="Azure" Opacity="0"/>
+                    </Canvas.Background>
+                </Canvas>
+            </Border>
+
+            <Label Grid.Column="1"> 
+                <Label.Content>
+                    <AccessText TextWrapping="Wrap" Text="Bem vindo ao exemplo de uso da RNA Kohonen!&#xD;&#xA;Este exemplo contém uma RNA com 2 neurônios na camada de entrada (X e Y) e 10x10 neurônios na camada competitiva.&#xD;&#xA;- Clique no painel à esquerda para inserir um padrão de entrada {X,Y} ao conjunto de treinamento da rede (Dica: clique várias vezes por toda a tela);&#xD;&#xA;- Use o Botão &quot;Limpar Padrões&quot; para limpar todos os padrões que você inseriu;&#xA;- Use o Botão &quot;Reiniciar Rede&quot; para aleatorizar a camada competitiva;&#xD;&#xA;- Use o Botão &quot;Aprender&quot; para iniciar o aprendizado;&#xA;"/>
+                </Label.Content>
+            </Label>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="171"/>
+                <ColumnDefinition Width="171"/>
+                <ColumnDefinition Width="171"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Margin="15,15" Name="btnLimpar" Content="Limpar Padrões" Click="btnLimpar_Click"/>
+            <Button Grid.Column="1" Margin="15,15" Name="btnReiniciar" Content="Reiniciar Rede" Click="btnReiniciar_Click" />
+            <Button Grid.Column="2" Margin="15,15" Name="btnAprender" Content="Aprender" Click="btnAprender_Click" />
+        </Grid>
+    </Grid>
+</Window>
